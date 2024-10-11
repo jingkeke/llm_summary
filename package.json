@@ -1,0 +1,37 @@
+{
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "name": "my-node-shell",
+  "version": "1.0.0",
+  "description": "目前有LLM summary",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "summary_url": "./bin/my-node-shell.ts",
+    "test-cli":"./bin/bin.js"
+  },
+  "scripts": {
+    "build": "tsc --outDir  dist",
+    "dev": "node --env-file=.env --watch -r ts-node/register src/index.ts",
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "@postlight/parser": "^2.2.3",
+    "chalk": "^5.3.0",
+    "cheerio": "1.0.0-rc.12",
+    "jsdom": "^24.0.0",
+    "ollama": "^0.5.0",
+    "openai": "4.33.0",
+    "ora": "^8.0.1"
+  }
+}

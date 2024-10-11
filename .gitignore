@@ -1,0 +1,12 @@
+
+node_modules
+dist
+.env
+test.txt
+
+.idea
+
+std_learn.js
+youtube
+messi-data.json
+jasminetest.html
